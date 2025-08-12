@@ -1,6 +1,6 @@
-const apiKey = "0926c0ad684e4b59b36104731251208"; 
+const apiKey = "0926c0ad684e4b59b36104731251208"; // აქ ჩაანაცვლე შენი WeatherAPI key
 
-document.getElementById("getWeather").addEventListener("click", () => {
+function getWeather() {
   const city = document.getElementById("cityInput").value.trim();
   const weatherDiv = document.getElementById("weather");
 
@@ -31,4 +31,14 @@ document.getElementById("getWeather").addEventListener("click", () => {
       weatherDiv.innerHTML = `<p>Error occurred 😢</p>`;
       console.error(err);
     });
+}
+
+// ღილაკზე კლიკი
+document.getElementById("getWeather").addEventListener("click", getWeather);
+
+// Enter-ზე დაჭერა input-ში
+document.getElementById("cityInput").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    getWeather();
+  }
 });
