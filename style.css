@@ -4,10 +4,25 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main-box {
+    border: 2px solid rgb(255, 255, 255);
+    width: 70vh;
+    height: 70vh;
+    background-color: white;
+    border-radius: 3vh;
+    margin-top: 12vh;
+}
+
+.hh1 {
+    color: rgb(132, 188, 207);
+    text-align: center;
 }
