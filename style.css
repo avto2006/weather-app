@@ -1,28 +1,65 @@
 body {
     background-image: url(img/back.jpg);
-    background-position: inherit;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .main-box {
-    border: 2px solid rgb(255, 255, 255);
-    width: 70vh;
-    height: 70vh;
-    background-color: white;
-    border-radius: 3vh;
-    margin-top: 12vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 2px 4px 30px rgba(0,0,0,0.2);
 }
 
 .hh1 {
-    color: rgb(132, 188, 207);
+    color: rgb(95, 158, 179);
+    margin-bottom: 20px;
+}
+
+.city-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
     text-align: center;
+}
+
+#getWeather {
+    background-color: #fff;
+    color: #5563DE;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#getWeather:hover {
+    background-color: #5563DE;
+    color: #fff;
+}
+
+#weather {
+    margin-top: 20px;
+    color: #fff;
+}
+
+#weather img {
+    margin: 10px 0;
 }
