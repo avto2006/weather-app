@@ -1,0 +1,13 @@
+body {
+    background-image: url(img/back.jpg);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
